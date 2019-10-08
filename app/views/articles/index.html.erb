@@ -1,11 +1,13 @@
-<h1> Current Event Articles </h1>
-<h4>  <%= link_to 'New Blog Post', new_article_path %> </h4>
+<h1> Breaking News with Scurrey </h1>
+<img src="https://www.relisto.com/wp-content/uploads/2017/10/breaking-news.jpg">
+<h2>  <%= link_to 'New Blog Post', new_article_path %> </h2>
 <table>
   <tr>
     <th> Title </th>
     <th> Author </th>
     <th> Text </th>
     <th> Date </th>
+    <th> More Options</th>
   </tr>
 
   <% @articles.each do |article| %>
@@ -16,11 +18,7 @@
       <td><%= article.created_at %></td>
       <td>
         <%= link_to 'Show', article_path(article) %>
-      </td>
-      <td>
         <%= link_to 'Edit', edit_article_path(article) %>
-      </td>
-      <td>
           <%= link_to 'Destroy', article_path(article),
             method: :delete,
             data: { confirm: 'Are you sure you want to delete?'}
@@ -29,5 +27,7 @@
     </tr>
   <% end %>
  </table>
+
+ <h2> <%= link_to 'Article Comments', answers_path %> </h2>
 
 
