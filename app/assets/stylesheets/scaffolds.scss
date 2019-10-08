@@ -1,5 +1,8 @@
 body {
-  background-color: rgb(230, 223, 223);
+  background: linear-gradient(90deg,#28bbeb,#ff637e,#ffe226,#1cd5af,#28bbeb);
+    background-size: 400% 100%;
+    background-position: 2.3% 0;
+    transition: background-position .5s ease;
   color: #333;
   margin: 33px;
   font-family: "Circular", Helvetica, Arial, sans-serif;
@@ -23,14 +26,14 @@ a {
   color: #000;
 
   &:visited {
-    color: red;
+    color: black;
     background-color: white;
     padding: 20px;
     border-radius: 3%;
   }
 
   &:hover {
-    color: red;
+    color:black;
     background-color: white;
   }
 }
