@@ -1,8 +1,7 @@
-<h1> Show Page </h1>
-<p>
+<h1>
   <strong> Title: </strong>
   <%= @article.title %>
-</p>
+</h1>
 <p>
   <strong> Author: </strong>
   <%= @article.author %>
@@ -15,3 +14,5 @@
   <strong> Time: </strong>
   <%= @article.created_at %>
 </p>
+<h4> <%= link_to 'Back', articles_path %> </h4>
+
