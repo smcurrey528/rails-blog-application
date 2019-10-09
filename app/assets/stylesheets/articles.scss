@@ -3,17 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 th {
  font-weight: bold;
+ font-size: 18px;
  border: 2px black solid;
  background: linear-gradient(90deg,#28bbeb,#ff637e,#ffe226,#1cd5af,#28bbeb);
-    background-size: 400% 100%;
-    background-position: 33.3% 0;
-    transition: background-position .5s ease;
-padding: 10px 20px 10px 20px;
+ background-size: 400% 100%;
+ background-position: 33.3% 0;
+ transition: background-position .5s ease;
+ padding: 10px 20px 10px 20px;
 }
 
 td {
  border: 1px black solid;
  background-color: white;
+ padding: 10px;
+ font-size: 16px;
 }
 
 table {
@@ -28,4 +31,14 @@ table {
 
 img {
     border-radius: 6%;
+}
+
+h2 {
+  padding: 15px;
+}
+
+.inline-links {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }

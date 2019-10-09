@@ -1,6 +1,9 @@
 <h1> Breaking News with Scurrey </h1>
 <img src="https://www.relisto.com/wp-content/uploads/2017/10/breaking-news.jpg">
-<h2>  <%= link_to 'New Blog Post', new_article_path %> </h2>
+<div class="inline-links">
+  <h2>  <%= link_to 'New Blog Post', new_article_path %> </h2>
+  <h2> <%= link_to 'Article Comments', answers_path %> </h2>
+</div>
 <table>
   <tr>
     <th> Title </th>
@@ -27,7 +30,5 @@
     </tr>
   <% end %>
  </table>
-
- <h2> <%= link_to 'Article Comments', answers_path %> </h2>
 
 
