@@ -1,3 +1,4 @@
+<div class="form">
 <h1> New Article </h1>
 
 <%= form_for :article, url: articles_path do |f| %>
@@ -17,5 +18,5 @@
       <%= f.submit %>
   </p>
 <% end %>
-
+</div>
 <h4> <%= link_to 'Back to Articles', articles_path %> </h4>

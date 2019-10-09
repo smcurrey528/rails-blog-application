@@ -1,7 +1,8 @@
-<h1>
+<div class="form">
+<h4>
   <strong> Title: </strong>
   <%= @article.title %>
-</h1>
+</h4>
 <p>
   <strong> Author: </strong>
   <%= @article.author %>
@@ -16,5 +17,7 @@
 </p>
 
 <%= link_to 'Post a Comment', new_answer_path %>
+
+</div>
 <h4> <%= link_to 'Back', articles_path %> </h4>
 
